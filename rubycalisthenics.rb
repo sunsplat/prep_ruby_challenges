@@ -1,3 +1,6 @@
+# http://www.vikingcodeschool.com/web-markup-and-coding/level-up-your-ruby-judo
+
+
 # 1. Power
 # Write a method 'power' which takes two integers ('base' and 'exponent') and
 # returns the 'base' raised to the power of 'exponent'. Do not use Ruby's '**'
