@@ -32,6 +32,7 @@ end
 
 power_two(100, 2)
 
+
 # 2. Factorial
 # Write a method factorial which takes a number and returns the product
 # of every number up to the current number multiplied together.
@@ -45,3 +46,6 @@ factorial(5)
 factorial(10)
 # => 3628800
 
+
+# 3. Uniques
+# Write a method uniques which takes an array of items and returns the array without any duplicates. Don’t use Ruby’s uniq method!
