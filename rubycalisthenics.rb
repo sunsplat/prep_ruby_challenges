@@ -91,9 +91,9 @@ combinations(["on", "in"],["to", "rope"])
 # returns true if it is a prime number.
 
 def is_prime?(num)
-    if num == 2 || num == 3
+    if num == 2 || num == 3 || num == 5
         return true
-    elsif num % 2 == 0 || num % 3 == 0
+    elsif num % 2 == 0 || num % 3 == 0 || num % 5 == 0
         return false
     else
         return true
@@ -102,3 +102,29 @@ end
 
 is_prime?(7)
 is_prime?(14)
+is_prime?(25)
+
+# 6. Rectangle Overlap
+# Write a method overlap which takes two rectangles defined 
+# by the coordinates of their corners, 
+# e.g. [[0,0],[3,3]] and [[1,1],[4,6]], and determines whether 
+# they overlap. You can assume all coordinates are positive integers.
+
+def overlap(first_rect, second_rect)
+    a1 = first_rect[0]
+    a2 = first_rect[1]
+    b1 = second_rect[0]
+    b2 = second_rect[1]
+
+     if b1[0] < a2[0] && b1[1] < a2[1]
+        return true
+    else 
+        return false
+    end
+
+end
+
+overlap( [ [0,0],[3,3] ], [ [1,1],[4,5] ] )
+overlap( [ [0,0],[1,4] ], [ [1,1],[3,2] ] )
+
+    
