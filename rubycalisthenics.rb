@@ -90,5 +90,15 @@ combinations(["on", "in"],["to", "rope"])
 # Write a method is_prime? which takes in a number and 
 # returns true if it is a prime number.
 
-def is_prime?
+def is_prime?(num)
+    if num == 2 || num == 3
+        return true
+    elsif num % 2 == 0 || num % 3 == 0
+        return false
+    else
+        return true
+    end
 end
+
+is_prime?(7)
+is_prime?(14)
