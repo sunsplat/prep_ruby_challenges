@@ -65,10 +65,6 @@ def uniques(arr)
         end
     end
     print arr_values.flatten!
-    # puts arr_values = grouped.delete_if{|_, e| e.length >1}
-    # new_array = []
-    # x = arr_values.values
-    # print x.flatten!
 end
 
 uniques([1, 5, 'frog', 2, 1, 3, 'frog'])
