@@ -51,4 +51,30 @@ factorial(10)
 
 
 # 3. Uniques
-# Write a method uniques which takes an array of items and returns the array without any duplicates. Don’t use Ruby’s uniq method!
+# Write a method uniques which takes an array of items and returns 
+# the array without any duplicates. Don’t use Ruby’s uniq method!
+
+def uniques(arr)
+    arr_values = []
+    puts grouped = arr.group_by {|e| e}
+    grouped.each do |key, value|
+        if value.length > 1
+            arr_values.push(value[0])
+        else
+            arr_values.push(value)
+        end
+    end
+    print arr_values.flatten!
+    # puts arr_values = grouped.delete_if{|_, e| e.length >1}
+    # new_array = []
+    # x = arr_values.values
+    # print x.flatten!
+end
+
+uniques([1, 5, 'frog', 2, 1, 3, 'frog'])
+
+# 4. Combinations
+# Write a method combinations which takes two arrays of
+# strings and returns an array with all of the combinations
+# of the items in them, listing the first items first.
+
