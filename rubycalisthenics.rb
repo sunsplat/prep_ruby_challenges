@@ -56,7 +56,7 @@ factorial(10)
 
 def uniques(arr)
     arr_values = []
-    puts grouped = arr.group_by {|e| e}
+    grouped = arr.group_by {|e| e}
     grouped.each do |key, value|
         if value.length > 1
             arr_values.push(value[0])
@@ -74,3 +74,21 @@ uniques([1, 5, 'frog', 2, 1, 3, 'frog'])
 # strings and returns an array with all of the combinations
 # of the items in them, listing the first items first.
 
+def combinations(arr_one, arr_two)
+    arr_join = []
+    arr_one.each do |x|
+        arr_two.each do |y|
+            arr_join.push(x + y)
+        end
+    end
+    print arr_join
+end
+
+combinations(["on", "in"],["to", "rope"])
+
+# 5. Primes
+# Write a method is_prime? which takes in a number and 
+# returns true if it is a prime number.
+
+def is_prime?
+end
